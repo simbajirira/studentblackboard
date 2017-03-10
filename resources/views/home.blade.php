@@ -24,7 +24,7 @@
                 <div class="slide_text">
                     <div class="table">
                         <div class="table_cell">
-                            <h2>EduCamp is Awesome</h2>
+                            <h2>{{ config('app.name') }}</h2>
                             <h3>Education is the most powerful weapon which you can use to change the world.</h3>
                             <div class="welcome_btn">
                                 <a class="btn btn-1 btn-default btn-lg active" href="#" role="button">Enroll Now</a>
@@ -47,7 +47,7 @@
                     <!-- Section Heading Start -->
                     <div class="section_heading wow fadeInUp">
                         <img src="img/icon-img/icon.png" alt="">
-                        <h4>Best Services</h4>
+                        <h4>{{ config('app.name') }} Services</h4>
                     </div>
                     <!-- Section Heading End -->
                 </div>
@@ -134,7 +134,7 @@
                     <!-- Section Heading Area Start -->
                     <div class="section_heading wow fadeInUp">
                         <img src="img/icon-img/coures-icon.png" alt="">
-                        <h4>Upcoming Events</h4>
+                        <h4>Upcoming Courses</h4>
                     </div>
                     <!-- Section Heading Area End -->
                 </div>
@@ -281,7 +281,7 @@
                 <div class="col-xs-12">
                     <div class="section_heading wow fadeInUp">
                         <img src="img/icon-img/why-choose-icon.png" alt="">
-                        <h4>WHY Choose Us</h4>
+                        <h4>WHY Choose {{ config('app.name') }}</h4>
                     </div>
                 </div>
             </div>
@@ -437,351 +437,9 @@
     </section>
     <!-- ===================== Why Chooses Area End ===================== -->
 
-    <!-- ===================== Cool Facts Area Start ===================== -->
-    <section class="cool_facts_area home2 section_padding_60">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-gift"></span>
-                        <h3><span class="counter">47</span></h3>
-                        <h5>Free Courses</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
+  
 
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-adjustments"></span>
-                        <h3><span class="counter">3</span>k+</h3>
-                        <h5>Seats</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
 
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-profile-male"></span>
-                        <h3><span class="counter">105</span></h3>
-                        <h5>TEACHERS</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-lightbulb"></span>
-                        <h3><span class="counter">5</span>k+</h3>
-                        <h5>Graduates</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-happy"></span>
-                        <h3><span class="counter">953</span></h3>
-                        <h5>Happy Students</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <!-- Single Cool Facts area Start -->
-                    <div class="cool_fact_text">
-                        <span class="icon-trophy"></span>
-                        <h3><span class="counter">21</span></h3>
-                        <h5>Awards</h5>
-                    </div>
-                    <!-- Single Cool Facts area End -->
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ===================== Why Chooses Area End ===================== -->
-
-    <!-- ===================== Student Gallery Area Start ===================== -->
-    <section class="gallery_area home2 clearfix section_padding_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="section_heading wow fadeInUp">
-                        <img src="img/icon-img/gallery.png" alt="">
-                        <h4>Student Gallery</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_full_width_images_area">
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="0.2s">
-                <img src="img/gallery/1.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery One</h5>
-                        <p>Event &amp; Planning</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/1.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="0.4s">
-                <img src="img/gallery/2.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Two</h5>
-                        <p>Bio-chemistry</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/2.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="0.6s">
-                <img src="img/gallery/3.jpg" alt="">
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Three</h5>
-                        <p>Meeting</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/3.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="0.8s">
-                <img src="img/gallery/4.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Four</h5>
-                        <p>Studing</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/4.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="1s">
-                <img src="img/gallery/5.jpg" alt="">
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Five</h5>
-                        <p>Team Work</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="1.2s">
-                <img src="img/gallery/6.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Six</h5>
-                        <p>Studing</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/6.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="1.4s">
-                <img src="img/gallery/7.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Seven</h5>
-                        <p>IT Coures</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/7.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single gallery Item Start -->
-            <div class="single_gallery_item clearfix wow fadeInUp" data-wow-delay="1.6s">
-                <img src="img/gallery/8.jpg" alt="">
-                <!-- Single gallery Item hover caption -->
-                <div class="hover_overlay">
-                    <div class="gallery_info">
-                        <h5>Gallery Eight</h5>
-                        <p>In Campus</p>
-                    </div>
-                    <!-- Popup links -->
-                    <div class="links">
-                        <a class="magnific-popup" href="img/gallery/8.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- ===================== Student Gallery Area End ===================== -->
-
-    <!-- ===================== Call to action Area Start ===================== -->
-    <div class="call_to_action">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="call_to">
-                        <h3>Bring your career on the right track. Start today!</h3>
-                        <a class="btn btn-default" href="#" role="button">Get Started <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ===================== Call to action Area End ===================== -->
-
-    <!-- ===================== Price and Plans Area Start ===================== -->
-    <div class="price_plan_area section_padding_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="section_heading wow fadeInUp">
-                        <img src="img/icon-img/why-choose-icon.png" alt="">
-                        <h4>Pick Your plan</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <!-- Single Price Plan Area Start -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="title">
-                            <h3>Trial</h3>
-                        </div>
-                        <div class="price">
-                            <h4>$0</h4>
-                        </div>
-                        <div class="description">
-                            <p>Duration: 7days</p>
-                            <p>Online Course</p>
-                            <p>Monthly Exam</p>
-                            <p>No Hidden Fees</p>
-                            <p>100+ Video Lesson</p>
-                            <p>5 Practical Class</p>
-                        </div>
-                        <div class="button">
-                            <a class="btn btn-default" href="#" role="button">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Price Plan Area End -->
-
-                <!-- Single Price Plan Area Start -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="title">
-                            <h3>Silver</h3>
-                        </div>
-                        <div class="price">
-                            <h4>$99</h4>
-                        </div>
-                        <div class="description">
-                            <p>Duration: 30days</p>
-                            <p>Online Course</p>
-                            <p>Monthly Exam</p>
-                            <p>No Hidden Fees</p>
-                            <p>100+ Video Lesson</p>
-                            <p>5 Practical Class</p>
-                        </div>
-                        <div class="button">
-                            <a class="btn btn-default" href="#" role="button">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Price Plan Area End -->
-
-                <!-- Single Price Plan Area Start -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="title">
-                            <h3>Gold</h3>
-                        </div>
-                        <div class="price">
-                            <h4>$199</h4>
-                        </div>
-                        <div class="description">
-                            <p>Duration: 90days</p>
-                            <p>Online Course</p>
-                            <p>Monthly Exam</p>
-                            <p>No Hidden Fees</p>
-                            <p>100+ Video Lesson</p>
-                            <p>5 Practical Class</p>
-                        </div>
-                        <div class="button">
-                            <a class="btn btn-default" href="#" role="button">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Price Plan Area End -->
-
-                <!-- Single Price Plan Area Start -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="title">
-                            <h3>Pro</h3>
-                        </div>
-                        <div class="price">
-                            <h4>$399</h4>
-                        </div>
-                        <div class="description">
-                            <p>Duration: 90days</p>
-                            <p>Online Course</p>
-                            <p>Monthly Exam</p>
-                            <p>No Hidden Fees</p>
-                            <p>100+ Video Lesson</p>
-                            <p>5 Practical Class</p>
-                        </div>
-                        <div class="button">
-                            <a class="btn btn-default" href="#" role="button">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Price Plan Area End -->
-
-            </div>
-        </div>
-    </div>
-    <!-- ===================== Price and Plans Area End ===================== -->
 
     <!-- ===================== Testimonial Area Start ===================== -->
     <section class="testimonial_area home2 section_padding_60">
@@ -948,21 +606,7 @@
     </section>
     <!-- ===================== Blog Area End ===================== -->
 
-    <!-- ===================== Video Area Start ===================== -->
-    <div class="video_area section_padding_60">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="video_play_area wow zoomIn">
-                        <div class="video_play_button" id="video">
-                            <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ===================== Video Area End ===================== -->
+   
 
     <!-- ===================== Contact & FAQ Area Start ===================== -->
     <section class="global_partner_area section_padding_100">
@@ -981,7 +625,7 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="basic_contact_area wow fadeInUp" data-wow-delay="0.2s">
                         <!-- basic contact title -->
-                        <h5>HAve a quesions? Write to us.</h5>
+                        <h5>HAve a quesions? Write to {{ config('app.name') }}.</h5>
                         <!-- basic contact form -->
                         <div class="basic_contact_form">
                             <form action="#">
