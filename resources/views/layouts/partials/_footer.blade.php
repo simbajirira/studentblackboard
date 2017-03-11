@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="footer_bottom wow fadeInDown">
-                            <p>{{ config('app.copy') }} {{ config('app.name') }}.<a href="http://www.simbajirira.com">Founder Simba Jirira</a></p>
+                            <p>{{ config('app.copy') }} {{ config('app.name') }}.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.simbajirira.com">Founder Simba Jirira</a></p>
                         </div>
                         <!-- Bottom Footer Copywrite Text Area End -->
                     </div>

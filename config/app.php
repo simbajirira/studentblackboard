@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'StudentBlackBoard',
+    'name' => 'Studentblackboard',
     'copy' => 'Copyright &copy; 2016 - '.date("Y"),
 
     /*

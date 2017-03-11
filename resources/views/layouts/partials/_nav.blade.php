@@ -14,14 +14,8 @@
                             <div class="mainmenu">
                                 <nav>
                                     <ul id="nav">
-                                        <li class="current_page_item"><a href="{{ route('home') }}">Home</a></li>
-                                        <li><a href="#">course<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="course-grid.html">Course Grid</a></li>
-                                                <li><a href="course-list.html">Course List</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
-                                            </ul>
-                                        </li>
+                                        <li {{(Request::is('/') ? 'class=current_page_item' : '')}}><a href="{{ route('home') }}">Home</a></li>
+                                        <li {{(Request::is('courses') ? 'class=current_page_item' : '')}}><a href="{{ route('courses') }}">courses</a></li>
                                         <li><a href="#">teacher<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="teachers.html">Teachers</a></li>
