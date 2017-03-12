@@ -29,7 +29,8 @@
                                                 <li><a href="event-details.html">Event Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li {{(Request::is('about') ? 'class=current_page_item' : '')}}><a href="{{ route('about') }}">{{config('app.name')}}</a></li>
+                                        <li {{(Request::is('contact') ? 'class=current_page_item' : '')}}><a href="{{ route('contact') }}">contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

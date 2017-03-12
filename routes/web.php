@@ -20,7 +20,9 @@
 // Routes Public routes no authntication needed
 Route::group(['middleware'=>'guest'], function(){
 
-    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/',         'HomeController@index')->name('home');
+    Route::get('/about',    'HomeController@about')->name('about');
+    Route::get('/contact',  'HomeController@contact')->name('contact');
 
     Route::group(['prefix' => 'courses'],  function(){
         Route::get('/','CourseController@index')->name('courses');
