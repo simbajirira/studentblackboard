@@ -19,11 +19,16 @@ Auth::routes();
 
 // Routes Public routes no authntication needed
 Route::get('/',         'HomeController@index')->name('home');
-Route::get('/about',    'HomeController@about')->name('about');
-Route::get('/contact',  'HomeController@contact')->name('contact');
+Route::get('/studentblackboard/about',    'HomeController@about')->name('about');
+Route::get('/studentblackboard/events',    'HomeController@events')->name('events');
+Route::get('/studentblackboard/contact',  'HomeController@contact')->name('contact');
 
-Route::group(['prefix' => 'courses'],  function(){
-    Route::get('/','CourseController@index')->name('courses');
+
+Route::group(['prefix' => 'library'],  function(){
+
+    Route::group(['prefix' => 'courses'],  function(){
+        Route::get('/all','CourseController@index')->name('all');
+    });
 });
 
 

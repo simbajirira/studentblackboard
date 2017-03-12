@@ -15,22 +15,37 @@
                                 <nav>
                                     <ul id="nav">
                                         <li {{(Request::is('/') ? 'class=current_page_item' : '')}}><a href="{{ route('home') }}">Home</a></li>
-                                        <li {{(Request::is('courses') ? 'class=current_page_item' : '')}}><a href="{{ route('courses') }}">courses</a></li>
                                         <li><a href="#">teacher<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="teachers.html">Teachers</a></li>
                                                 <li><a href="teachers-details.html">Teacher Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Event<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                        <li 
+                                            {{
+                                                (Request::is('library/courses/all') ? 'class=current_page_item' : '')
+
+                                            }}>
+                                            <a href="#">Library<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="event-grid.html">Event Grid</a></li>
-                                                <li><a href="event-list.html">Event List</a></li>
-                                                <li><a href="event-details.html">Event Details</a></li>
+                                                <li><a href="{{ route('all') }}">All courses</a></li>
+                                                <li><a href="event-grid.html">Upcoming Events</a></li>
+                                                <li><a href="event-list.html">upcoming courses</a></li>
                                             </ul>
                                         </li>
-                                        <li {{(Request::is('about') ? 'class=current_page_item' : '')}}><a href="{{ route('about') }}">{{config('app.name')}}</a></li>
-                                        <li {{(Request::is('contact') ? 'class=current_page_item' : '')}}><a href="{{ route('contact') }}">contact</a></li>
+
+                                        <li 
+                                            {{                                                
+                                                (Request::is('about','contact') ? 'class=current_page_item' : '')                                             
+                                                
+                                            }}>
+                                            <a href="#">{{config('app.name')}}<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{{ route('events') }}">events</a></li>
+                                                <li><a href="{{ route('contact') }}">contact</a></li>
+                                                <li><a href="{{ route('about') }}">about</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
