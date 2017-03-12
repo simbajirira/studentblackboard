@@ -13,23 +13,19 @@
 
 
 
-//Auth::routes();
+Auth::routes();
 
 
 
 // Routes Public routes no authntication needed
-Route::group(['middleware'=>'guest'], function(){
+Route::get('/',         'HomeController@index')->name('home');
+Route::get('/about',    'HomeController@about')->name('about');
+Route::get('/contact',  'HomeController@contact')->name('contact');
 
-    Route::get('/',         'HomeController@index')->name('home');
-    Route::get('/about',    'HomeController@about')->name('about');
-    Route::get('/contact',  'HomeController@contact')->name('contact');
-
-    Route::group(['prefix' => 'courses'],  function(){
-        Route::get('/','CourseController@index')->name('courses');
-    });
-    
-
+Route::group(['prefix' => 'courses'],  function(){
+    Route::get('/','CourseController@index')->name('courses');
 });
+
 
 // Authnticated routes users must be logged in to have access
 Route::group(['middleware' => 'auth'], function(){

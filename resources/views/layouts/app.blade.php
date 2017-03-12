@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
+     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Student black board') }}</title>
@@ -37,16 +38,38 @@
                                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </div>
-                            <!--  Login Register Area -->
-                            <div class="login_register">
-                                <div class="login">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                    <a href="login.html">Login</a>
-                                </div>
-                                <div class="reg">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    <a href="register.html">Register</a>
-                                </div>
+                            <!--  Login Register Area -->                           
+
+                                @if (Route::has('login'))
+                                    <div class="login_register">
+                                        @if (Auth::check())
+                                            <div class="reg">
+                                                <i class="fa fa-home" aria-hidden="true"></i>
+                                                <a href="{{ url('/') }}">Home</a>
+                                            </div>                                            
+                                            <div class="login">
+                                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                <a href="{{ route('logout') }}"
+                                                  onclick="event.preventDefault();
+                                                           document.getElementById('logout-form').submit();">
+                                                  Logout
+                                              </a>
+                                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                  {{ csrf_field() }}
+                                              </form>
+                                            </div>                                                     
+                                        @else
+                                           <div class="login">
+                                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                                <a href="{{ route('login') }}">Login</a>
+                                            </div>
+                                            <div class="reg">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <a href="{{ route('register') }}">Register</a>
+                                            </div>
+                                        @endif
+                                    </div>
+                                @endif                                
                             </div>
                         </div>
                     </div>
