@@ -15,7 +15,7 @@
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                                <li>Event Grid</li>
+                                <li>All Events</li>
                             </ul>
                         </div>
                     </div>
